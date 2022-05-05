@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 3% auto 5%;
+    font-size: 52px;
+}
+
+section{
+    margin: 10px 10%;
+}
+
+.container-1, .container-2, .container-3{
+    border: 1px solid;
+    padding: 0px 5px 5px;
+    width: 90%;
+    background-color: #878e88;
+    position: relative;
+}
+
+.title-1{
+    background-color: #f55d3e;
+}
+
+.title-2{
+    background-color: #f7cb15;
+}
+
+.title-3{
+    background-color: #84c225;
+}
+
+.title-1, .title-2, .title-3{
+    width: 30%;
+    border: 1px solid;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 71.5%;
+    margin-right: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*** Desktop View ***/
+
+@media (min-width:992px) {
+    section{
+        margin: 0px 5%;
+    }
+
+    .container-1, .container-2, .container-3 {
+        width: 30%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .title-1, .title-2, .title-3{
+        width: 35%;
+        position: relative;
+        left: 66.5%;
+        text-align: center;
+    }
+}
+
+/*** Tablet view  **/
+
+@media (min-width:768px) and (max-width:991px) {
+    section{
+        margin: 0px 10%;
+    }
+
+    .container-1 {
+        width: 44%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .container-2 {
+        width: 44%;
+        float: left;
+    }
+
+    .clr {
+        clear: both;
+    }
+
+    .container-3{
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .title-1, .title-2{
+        width: 35%;
+        position: relative;
+        left: 67%;
+        text-align: center;
+    }
+
+    .title-3{
+        width: 25%;
+        position: relative;
+        left: 76%;
+        text-align: center;
+    }
+}
